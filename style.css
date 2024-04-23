@@ -1,0 +1,48 @@
+@charset "UTF-8";
+:root {
+    --background: #3a2e2e;
+    --background-card: #6b626c;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: var(--background);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+.gallery {
+    display:flex;
+    left: calc(50% - 10rem);
+}
+.card img {
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+.card:not(:first-child) {
+    margin-left: -3rem;
+}
+.card:hover {
+    transform: translateY(-2rem);
+    font-weight: bold;
+    cursor:pointer; /*ESTILO DO MOUSE*/
+}
+.card:hover ~ .card {
+    left: 2rem;
+    }
+
+.card {
+    position: relative;
+    left: 0;
+    width: 7rem;
+    height: 10rem;
+    background: var(--background-card);
+    border-radius: 0.5rem;
+    transition: 2s;
+    overflow: hidden;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5); 
+}
