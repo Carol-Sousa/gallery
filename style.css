@@ -46,3 +46,9 @@ body {
     overflow: hidden;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5); 
 }
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+    text-decoration: none;
+    
+}
